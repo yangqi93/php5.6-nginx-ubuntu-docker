@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+    web:
+        build:
+	    context: .
+	    dockerfile: Dockerfile
+	    target: dev
+	ports:
+	    - 9999:80
+	volumes:
+	    - /home/xxx/web:/var/www/html
