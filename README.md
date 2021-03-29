@@ -6,7 +6,7 @@ ubuntu/php5.6/nginx env
 ```
 docker-composer up
 
-docker run -it -p 9999:80 docker-image-name
+docker run -it -p 9999:80 --volume /Users/yangqi/Sites/web:/var/www/html my-first-docker_web:latest
 ```
 
 进入docker
